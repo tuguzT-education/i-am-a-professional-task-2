@@ -1,0 +1,9 @@
+ktor:
+  application:
+    modules:
+      - io.github.tuguzt.professional.app.ApplicationKt.module
+  deployment:
+    port: 8080
+database:
+  url: "$DATABASE_URL:jdbc:h2:mem:test;DB_CLOSE_DELAY=-1"
+  driver: "$DATABASE_DRIVER:org.h2.Driver"
